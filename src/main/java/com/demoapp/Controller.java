@@ -13,7 +13,6 @@ public class Controller {
     public String transaction(
         @RequestBody DTO transactionRequest
     ) {
-        var otherdto = DTO.builder().normalParam("aaa").build();
         return "success!";
     }
 }
