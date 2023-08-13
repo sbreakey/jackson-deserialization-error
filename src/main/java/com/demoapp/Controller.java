@@ -9,10 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path = "/")
 public class Controller {
 
-    @PostMapping(value = "/api/v1/transactions/wagers")
+    @PostMapping(value = "/endpoint")
     public String transaction(
         @RequestBody DTO transactionRequest
     ) {
+        var otherdto = DTO.builder().normalParam("aaa").build();
         return "success!";
     }
 }
